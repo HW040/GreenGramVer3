@@ -1,0 +1,401 @@
+[2024-12-10 09:52:31 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer3Application using Java 17.0.13 with PID 8252 (D:\RYU\GreenGramVer3\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer3)
+[2024-12-10 09:52:31 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-10 09:52:31 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-10 09:52:31 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-10 09:52:32 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-10 09:52:32 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-10 09:52:32 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-10 09:52:32 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-12-10 09:52:32 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-10 09:52:32 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 896 ms
+[2024-12-10 09:52:32 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver3
+[2024-12-10 09:52:32 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-10 09:52:32 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-10 09:52:32 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-10 09:52:32 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-10 09:52:32 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer3Application in 2.09 seconds (process running for 2.716)
+[2024-12-10 09:53:12 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer3Application using Java 17.0.13 with PID 2040 (D:\RYU\GreenGramVer3\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer3)
+[2024-12-10 09:53:12 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-10 09:53:12 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-10 09:53:12 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-10 09:53:13 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-10 09:53:13 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-10 09:53:13 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-10 09:53:13 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-12-10 09:53:13 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-10 09:53:13 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 797 ms
+[2024-12-10 09:53:13 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver3
+[2024-12-10 09:53:13 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-10 09:53:13 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-10 09:53:13 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-10 09:53:13 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-10 09:53:13 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer3Application in 1.664 seconds (process running for 2.003)
+[2024-12-10 09:53:20 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-10 09:53:20 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-10 09:53:20 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2024-12-10 09:53:22 INFO http-nio-8080-exec-9] [green.greengram.common.model.Paging] page = 1, size = 20
+[2024-12-10 09:53:22 INFO http-nio-8080-exec-9] [green.greengram.Feed.model.FeedGetReq] page: 1, size: null, userId: 8
+[2024-12-10 09:53:22 INFO http-nio-8080-exec-9] [green.greengram.Feed.FeedController] FeedController > getFeedList > p: FeedGetReq(super=Paging(page=1, size=20, startIdx=0), signedUserId=8, profileUserId=null)
+[2024-12-10 09:53:22 INFO http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-10 09:53:22 INFO http-nio-8080-exec-9] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1ecd225a
+[2024-12-10 09:53:22 INFO http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-10 09:53:23 DEBUGhttp-nio-8080-exec-9] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT
+        A.feed_id AS feedId
+        , A.contents
+        , A.location
+        , A.created_at AS createdAt
+        , B.user_id AS writerUserId
+        , if(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
+        , B.pic AS writerPic
+        , if(C.feed_id IS NULL, 0, 1) AS isLike
+    FROM feed A
+    INNER JOIN user B
+       ON A.writer_user_id =B.user_id
+    LEFT JOIN feed_like C
+       ON A.feed_id = C.feed_id
+      AND C.user_id = 8
+
+    ORDER BY A.feed_id DESC
+    LIMIT 0, 20
+ {executed in 14 msec}
+[2024-12-10 09:53:23 INFO http-nio-8080-exec-9] [jdbc.resultsettable] 
+|--------|-------------|---------|--------------------|--------|---------|-----------------------------------------|-------|
+|feed_id |contents     |location |created_at          |user_id |writernm |pic                                      |islike |
+|--------|-------------|---------|--------------------|--------|---------|-----------------------------------------|-------|
+|34      |             |bfx      |2024-12-09 18:38:01 |8       |ddd      |9f577304-05a8-4f3f-ae86-1536337e0728.png |0      |
+|33      |asd          |asda     |2024-12-06 13:09:00 |7       |aaa      |807255f5-cb28-4fbf-9ae8-316ac4c68efe.png |0      |
+|32      |             |         |2024-12-04 15:51:36 |6       |길동       |null                                     |0      |
+|31      |월어ㅜㄹ!!       |월!월!     |2024-12-04 15:50:44 |6       |길동       |null                                     |0      |
+|30      |월!월!         |월워루어ㅜㄹ   |2024-12-04 15:50:08 |6       |길동       |null                                     |0      |
+|29      |월어ㅜㄹ어ㅜㄹ      |월        |2024-12-04 15:05:59 |6       |길동       |null                                     |0      |
+|27      |치킨어택         |ㅇㅇ       |2024-12-02 17:30:20 |5       |ksj      |9da04bc8-df41-4d69-ad50-dd8cc59e250e.jpg |0      |
+|24      |I am panguin |남극       |2024-11-29 16:46:41 |1       |홍길동      |6cb4e4da-ef4a-4ed6-b3f8-8d35508094fc.png |0      |
+|--------|-------------|---------|--------------------|--------|---------|-----------------------------------------|-------|
+
+[2024-12-10 09:53:23 ERRORhttp-nio-8080-exec-9] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): green.greengram.Feed.FeedPicsMapper.selFeedPicList] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): green.greengram.Feed.FeedPicsMapper.selFeedPicList
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:229)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:96)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.ibatis.util.MapUtil.computeIfAbsent(MapUtil.java:36)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:94)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy86.selFeedPicList(Unknown Source)
+	at green.greengram.Feed.FeedService.getFeedList(FeedService.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at green.greengram.Feed.FeedService$$SpringCGLIB$$0.getFeedList(<generated>)
+	at green.greengram.Feed.FeedController.getFeedList(FeedController.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-12-10 09:53:46 INFO http-nio-8080-exec-4] [green.greengram.user.UserService] hashedPassword: $2a$10$hPV40r8dcdw9rlWDF3EQ7OmnE4PsA2W1vRLnhxggnrdcvXSNMznlu
+[2024-12-10 09:53:46 DEBUGhttp-nio-8080-exec-4] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. insert into user
+        set uid = 'id1'
+          , upw = '$2a$10$hPV40r8dcdw9rlWDF3EQ7OmnE4PsA2W1vRLnhxggnrdcvXSNMznlu'
+          , nick_name = 'ID1'
+          , pic = 'cee06816-60c5-4346-bbc2-0df139d6fc44.gif'
+ {executed in 4 msec}
+[2024-12-10 09:53:46 DEBUGhttp-nio-8080-exec-4] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into user
+        set uid = 'id1'
+          , upw = '$2a$10$hPV40r8dcdw9rlWDF3EQ7OmnE4PsA2W1vRLnhxggnrdcvXSNMznlu'
+          , nick_name = 'ID1'
+          , pic = 'cee06816-60c5-4346-bbc2-0df139d6fc44.gif'
+ {executed in 1 msec}
+[2024-12-10 09:53:46 INFO http-nio-8080-exec-4] [jdbc.resultsettable] 
+|----------|
+|insert_id |
+|----------|
+|9         |
+|----------|
+
+[2024-12-10 09:53:52 DEBUGhttp-nio-8080-exec-6] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT user_id AS userId
+        , ifnull(nick_name,uid) AS nickName
+        , pic
+        , upw
+        FROM user
+        WHERE uid = 'id1'
+ {executed in 4 msec}
+[2024-12-10 09:53:52 INFO http-nio-8080-exec-6] [jdbc.resultsettable] 
+|--------|---------|-----------------------------------------|-------------------------------------------------------------|
+|user_id |nickname |pic                                      |upw                                                          |
+|--------|---------|-----------------------------------------|-------------------------------------------------------------|
+|9       |ID1      |cee06816-60c5-4346-bbc2-0df139d6fc44.gif |$2a$10$hPV40r8dcdw9rlWDF3EQ7OmnE4PsA2W1vRLnhxggnrdcvXSNMznlu |
+|--------|---------|-----------------------------------------|-------------------------------------------------------------|
+
+[2024-12-10 09:53:53 INFO http-nio-8080-exec-3] [green.greengram.common.model.Paging] page = 1, size = 20
+[2024-12-10 09:53:53 INFO http-nio-8080-exec-3] [green.greengram.Feed.model.FeedGetReq] page: 1, size: null, userId: 9
+[2024-12-10 09:53:53 INFO http-nio-8080-exec-3] [green.greengram.Feed.FeedController] FeedController > getFeedList > p: FeedGetReq(super=Paging(page=1, size=20, startIdx=0), signedUserId=9, profileUserId=null)
+[2024-12-10 09:53:53 DEBUGhttp-nio-8080-exec-3] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT
+        A.feed_id AS feedId
+        , A.contents
+        , A.location
+        , A.created_at AS createdAt
+        , B.user_id AS writerUserId
+        , if(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
+        , B.pic AS writerPic
+        , if(C.feed_id IS NULL, 0, 1) AS isLike
+    FROM feed A
+    INNER JOIN user B
+       ON A.writer_user_id =B.user_id
+    LEFT JOIN feed_like C
+       ON A.feed_id = C.feed_id
+      AND C.user_id = 9
+
+    ORDER BY A.feed_id DESC
+    LIMIT 0, 20
+ {executed in 1 msec}
+[2024-12-10 09:53:53 INFO http-nio-8080-exec-3] [jdbc.resultsettable] 
+|--------|-------------|---------|--------------------|--------|---------|-----------------------------------------|-------|
+|feed_id |contents     |location |created_at          |user_id |writernm |pic                                      |islike |
+|--------|-------------|---------|--------------------|--------|---------|-----------------------------------------|-------|
+|34      |             |bfx      |2024-12-09 18:38:01 |8       |ddd      |9f577304-05a8-4f3f-ae86-1536337e0728.png |0      |
+|33      |asd          |asda     |2024-12-06 13:09:00 |7       |aaa      |807255f5-cb28-4fbf-9ae8-316ac4c68efe.png |0      |
+|32      |             |         |2024-12-04 15:51:36 |6       |길동       |null                                     |0      |
+|31      |월어ㅜㄹ!!       |월!월!     |2024-12-04 15:50:44 |6       |길동       |null                                     |0      |
+|30      |월!월!         |월워루어ㅜㄹ   |2024-12-04 15:50:08 |6       |길동       |null                                     |0      |
+|29      |월어ㅜㄹ어ㅜㄹ      |월        |2024-12-04 15:05:59 |6       |길동       |null                                     |0      |
+|27      |치킨어택         |ㅇㅇ       |2024-12-02 17:30:20 |5       |ksj      |9da04bc8-df41-4d69-ad50-dd8cc59e250e.jpg |0      |
+|24      |I am panguin |남극       |2024-11-29 16:46:41 |1       |홍길동      |6cb4e4da-ef4a-4ed6-b3f8-8d35508094fc.png |0      |
+|--------|-------------|---------|--------------------|--------|---------|-----------------------------------------|-------|
+
+[2024-12-10 09:53:53 ERRORhttp-nio-8080-exec-3] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): green.greengram.Feed.FeedPicsMapper.selFeedPicList] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): green.greengram.Feed.FeedPicsMapper.selFeedPicList
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:229)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:96)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.ibatis.util.MapUtil.computeIfAbsent(MapUtil.java:36)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:94)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy86.selFeedPicList(Unknown Source)
+	at green.greengram.Feed.FeedService.getFeedList(FeedService.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at green.greengram.Feed.FeedService$$SpringCGLIB$$0.getFeedList(<generated>)
+	at green.greengram.Feed.FeedController.getFeedList(FeedController.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-12-10 09:53:59 DEBUGhttp-nio-8080-exec-7] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. insert into feed
+            set writer_user_id = 9
+                , contents = '123123'
+                , location = '123123'
+ {executed in 1 msec}
+[2024-12-10 09:53:59 DEBUGhttp-nio-8080-exec-7] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into feed
+            set writer_user_id = 9
+                , contents = '123123'
+                , location = '123123'
+ {executed in 0 msec}
+[2024-12-10 09:53:59 INFO http-nio-8080-exec-7] [jdbc.resultsettable] 
+|----------|
+|insert_id |
+|----------|
+|35        |
+|----------|
+
+[2024-12-10 09:53:59 ERRORhttp-nio-8080-exec-7] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): green.greengram.Feed.FeedPicsMapper.insFeedPic] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): green.greengram.Feed.FeedPicsMapper.insFeedPic
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:229)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:96)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.ibatis.util.MapUtil.computeIfAbsent(MapUtil.java:36)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:94)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy86.insFeedPic(Unknown Source)
+	at green.greengram.Feed.FeedService.postFeed(FeedService.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at green.greengram.Feed.FeedService$$SpringCGLIB$$0.postFeed(<generated>)
+	at green.greengram.Feed.FeedController.postFeed(FeedController.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-12-10 09:56:19 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 27 class path changes (0 additions, 0 deletions, 27 modifications)
+[2024-12-10 09:56:19 INFO Thread-5] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-12-10 09:56:19 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-10 09:56:19 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-10 09:56:19 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer3Application using Java 17.0.13 with PID 2040 (D:\RYU\GreenGramVer3\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer3)
+[2024-12-10 09:56:19 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-10 09:56:20 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-10 09:56:20 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-10 09:56:20 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-10 09:56:20 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-12-10 09:56:20 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-10 09:56:20 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 205 ms
+[2024-12-10 09:56:20 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver3
+[2024-12-10 09:56:20 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-10 09:56:20 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-10 09:56:20 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-10 09:56:20 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-10 09:56:20 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer3Application in 0.393 seconds (process running for 188.348)
+[2024-12-10 09:56:20 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged

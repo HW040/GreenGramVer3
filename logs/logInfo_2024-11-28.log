@@ -1,0 +1,1692 @@
+[2024-11-28 17:21:58 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 12684 (D:\RYU\GreenGramVer2\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer2)
+[2024-11-28 17:21:58 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-11-28 17:21:58 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-11-28 17:21:58 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-11-28 17:21:59 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-11-28 17:21:59 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:21:59 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-11-28 17:21:59 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-11-28 17:21:59 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-11-28 17:21:59 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 814 ms
+[2024-11-28 17:21:59 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver2
+[2024-11-28 17:21:59 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-11-28 17:21:59 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:21:59 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-11-28 17:21:59 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer2Application in 1.736 seconds (process running for 2.061)
+[2024-11-28 17:22:03 INFO http-nio-8080-exec-3] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-11-28 17:22:03 INFO http-nio-8080-exec-3] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-11-28 17:22:03 INFO http-nio-8080-exec-3] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-11-28 17:22:03 WARN http-nio-8080-exec-3] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'p' is not present.]
+[2024-11-28 17:25:35 WARN http-nio-8080-exec-4] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid UTF-8 start byte 0x85]
+[2024-11-28 17:26:00 WARN http-nio-8080-exec-6] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries]
+[2024-11-28 17:26:05 ERRORhttp-nio-8080-exec-9] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): green.greengram.Feed.FeedMapper.insFeed] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): green.greengram.Feed.FeedMapper.insFeed
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:229)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:96)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.ibatis.util.MapUtil.computeIfAbsent(MapUtil.java:36)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:94)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.insFeed(Unknown Source)
+	at green.greengram.Feed.FeedService.postFeed(FeedService.java:23)
+	at green.greengram.Feed.FeedController.postFeed(FeedController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-11-28 17:26:40 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 7800 (D:\RYU\GreenGramVer2\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer2)
+[2024-11-28 17:26:40 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-11-28 17:26:40 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-11-28 17:26:40 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-11-28 17:26:41 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-11-28 17:26:41 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:26:41 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-11-28 17:26:41 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-11-28 17:26:41 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-11-28 17:26:41 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 774 ms
+[2024-11-28 17:26:41 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver2
+[2024-11-28 17:26:42 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-11-28 17:26:42 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:26:42 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-11-28 17:26:42 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer2Application in 1.671 seconds (process running for 2.007)
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection opened. {executed in 48ms} 
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.new Connection returned 
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getNetworkTimeout() returned 0
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.isReadOnly() returned false
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.isValid(1) returned true
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getTransactionIsolation() returned 4
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@2ab755ba
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.new PreparedStatement returned 
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.prepareStatement(insert into feed
+            set writer_User_id = ?
+                , contents = ?
+                , location = ?, 1) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@753ed185
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setLong(1, 0) returned 
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setString(2, "ㅇㅇㅇ") returned 
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setString(3, "ㅠㅠㅠ") returned 
+[2024-11-28 17:26:43 WARN http-nio-8080-exec-1] [org.mariadb.jdbc.message.server.ErrorPacket] Error: 1452-23000: Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+[2024-11-28 17:26:43 ERRORhttp-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.execute() FAILED! insert into feed set writer_User_id = 0 , contents = 'ㅇㅇㅇ' , location = 'ㅠㅠㅠ'  {FAILED after 2 ms}
+java.sql.SQLIntegrityConstraintViolationException: (conn=5) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:276)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.insFeed(Unknown Source)
+	at green.greengram.Feed.FeedService.postFeed(FeedService.java:23)
+	at green.greengram.Feed.FeedController.postFeed(FeedController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.close() returned 
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getMetaData() returned org.mariadb.jdbc.DatabaseMetaData@3377dab5
+[2024-11-28 17:26:43 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection opened. {executed in 2ms} 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.new Connection returned 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.isReadOnly() returned false
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.getAutoCommit() returned true
+[2024-11-28 17:26:43 ERRORhttp-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=5) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+### The error may exist in file [D:\RYU\GreenGramVer2\build\resources\main\mappers\FeedMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into feed             set writer_User_id = ?                 , contents = ?                 , location = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=5) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+; (conn=5) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))] with root cause
+java.sql.SQLIntegrityConstraintViolationException: (conn=5) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:276)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.insFeed(Unknown Source)
+	at green.greengram.Feed.FeedService.postFeed(FeedService.java:23)
+	at green.greengram.Feed.FeedController.postFeed(FeedController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection opened. {executed in 1ms} 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.new Connection returned 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.isReadOnly() returned false
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.getAutoCommit() returned true
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection opened. {executed in 5ms} 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.new Connection returned 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.isReadOnly() returned false
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.getAutoCommit() returned true
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection opened. {executed in 1ms} 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.new Connection returned 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.isReadOnly() returned false
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.getAutoCommit() returned true
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection opened. {executed in 1ms} 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.new Connection returned 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.isReadOnly() returned false
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.getAutoCommit() returned true
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection opened. {executed in 1ms} 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.new Connection returned 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.isReadOnly() returned false
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.getAutoCommit() returned true
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection opened. {executed in 1ms} 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.new Connection returned 
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.isReadOnly() returned false
+[2024-11-28 17:26:43 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.getAutoCommit() returned true
+[2024-11-28 17:26:44 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection opened. {executed in 1ms} 
+[2024-11-28 17:26:44 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.new Connection returned 
+[2024-11-28 17:26:44 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.isReadOnly() returned false
+[2024-11-28 17:26:44 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.getAutoCommit() returned true
+[2024-11-28 17:26:44 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection opened. {executed in 2ms} 
+[2024-11-28 17:26:44 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.new Connection returned 
+[2024-11-28 17:26:44 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.isReadOnly() returned false
+[2024-11-28 17:26:44 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.getAutoCommit() returned true
+[2024-11-28 17:29:33 INFO http-nio-8080-exec-4] [green.greengram.user.UserService] hashedPassword: $2a$10$NUITc5QiWsIlUZTX/EAOW.Zih1MdvgCUBFHVsQjFKBO8D01IHj0dm
+[2024-11-28 17:29:33 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. Connection.isValid(5) returned true
+[2024-11-28 17:29:33 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:29:33 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. PreparedStatement.new PreparedStatement returned 
+[2024-11-28 17:29:33 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. Connection.prepareStatement(insert into user
+        set uid = ?
+          , upw = ?
+          , nick_name = ?
+          , pic = ?, 1) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@40a56386
+[2024-11-28 17:29:33 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. PreparedStatement.setString(1, "test") returned 
+[2024-11-28 17:29:33 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. PreparedStatement.setString(2, "$2a$10$NUITc5QiWsIlUZTX/EAOW.Zih1MdvgCUBFHVsQjFKBO8D01IHj0dm") returned 
+[2024-11-28 17:29:33 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. PreparedStatement.close() returned 
+[2024-11-28 17:29:33 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:29:33 ERRORhttp-nio-8080-exec-4] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'nickName' in 'class green.greengram.user.model.UserSignUpReq'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:385)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:160)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:153)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:116)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:82)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:97)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:65)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:91)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy83.insUser(Unknown Source)
+	at green.greengram.user.UserService.postSignUp(UserService.java:34)
+	at green.greengram.user.UserController.signUp(UserController.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-11-28 17:30:04 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.isClosed() returned false
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.isClosed() returned false
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.isClosed() returned false
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.isClosed() returned false
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.isClosed() returned false
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.isClosed() returned false
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.isClosed() returned false
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.isClosed() returned false
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.isClosed() returned false
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.isClosed() returned false
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.close() returned 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection closed. {executed in 0ms} 
+[2024-11-28 17:30:04 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.close() returned 
+[2024-11-28 17:30:04 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-11-28 17:30:06 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 1448 (D:\RYU\GreenGramVer2\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer2)
+[2024-11-28 17:30:06 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-11-28 17:30:06 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-11-28 17:30:06 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-11-28 17:30:07 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-11-28 17:30:07 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:30:07 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-11-28 17:30:07 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-11-28 17:30:07 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-11-28 17:30:07 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 760 ms
+[2024-11-28 17:30:07 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver2
+[2024-11-28 17:30:07 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-11-28 17:30:07 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:30:07 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-11-28 17:30:07 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer2Application in 1.598 seconds (process running for 1.931)
+[2024-11-28 17:30:09 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-11-28 17:30:09 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-11-28 17:30:09 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [green.greengram.user.UserService] hashedPassword: $2a$10$Ds.5riCuT/ZJGz1z/VW13uk2P1C2BmebQMAuBNpVDJFpijpxrFDvW
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection opened. {executed in 39ms} 
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.new Connection returned 
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getNetworkTimeout() returned 0
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.isReadOnly() returned false
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.isValid(1) returned true
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getTransactionIsolation() returned 4
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@4cf00438
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.new PreparedStatement returned 
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.prepareStatement(insert into user
+        set uid = ?
+          , upw = ?
+          , nick_name = ?
+          , pic = ?, 1) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@62a51df0
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setString(1, "test") returned 
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setString(2, "$2a$10$Ds.5riCuT/ZJGz1z/VW13uk2P1C2BmebQMAuBNpVDJFpijpxrFDvW") returned 
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setString(3, "홍길동") returned 
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setString(4, "6cb4e4da-ef4a-4ed6-b3f8-8d35508094fc.png") returned 
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. insert into user set uid = 'test' , upw = '$2a$10$Ds.5riCuT/ZJGz1z/VW13uk2P1C2BmebQMAuBNpVDJFpijpxrFDvW' 
+, nick_name = '홍길동' , pic = '6cb4e4da-ef4a-4ed6-b3f8-8d35508094fc.png'  {executed in 3 ms}
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.execute() returned false
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.getUpdateCount() returned 1
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. getGeneratedKeys on query: insert into user set uid = 'test' , upw = '$2a$10$Ds.5riCuT/ZJGz1z/VW13uk2P1C2BmebQMAuBNpVDJFpijpxrFDvW' 
+, nick_name = '홍길동' , pic = '6cb4e4da-ef4a-4ed6-b3f8-8d35508094fc.png'  {executed in 0 ms}
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.new ResultSet returned 
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.getGeneratedKeys() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@6527ffd7
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.getMetaData() returned org.mariadb.jdbc.client.result.ResultSetMetaData@7099a060
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.next() returned true
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.getLong(1) returned 1
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 
+|----------|
+|insert_id |
+|----------|
+|1         |
+|----------|
+
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.next() returned false
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.close() returned void
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.close() returned 
+[2024-11-28 17:30:10 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection opened. {executed in 2ms} 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.new Connection returned 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.isReadOnly() returned false
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection opened. {executed in 0ms} 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.new Connection returned 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.isReadOnly() returned false
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection opened. {executed in 1ms} 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.new Connection returned 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.isReadOnly() returned false
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection opened. {executed in 1ms} 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.new Connection returned 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.isReadOnly() returned false
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection opened. {executed in 4ms} 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.new Connection returned 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.isReadOnly() returned false
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection opened. {executed in 5ms} 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.new Connection returned 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.isReadOnly() returned false
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection opened. {executed in 5ms} 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.new Connection returned 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.isReadOnly() returned false
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection opened. {executed in 1ms} 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.new Connection returned 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.isReadOnly() returned false
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection opened. {executed in 1ms} 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.new Connection returned 
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.isReadOnly() returned false
+[2024-11-28 17:30:10 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. Connection.isValid(5) returned true
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. PreparedStatement.new PreparedStatement returned 
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. Connection.prepareStatement(insert into feed
+            set writer_User_id = ?
+                , contents = ?
+                , location = ?, 1) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@60722daa
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. PreparedStatement.setLong(1, 0) returned 
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. PreparedStatement.setString(2, "ㅇㅇㅇ") returned 
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. PreparedStatement.setString(3, "ㅠㅠㅠ") returned 
+[2024-11-28 17:30:20 WARN http-nio-8080-exec-7] [org.mariadb.jdbc.message.server.ErrorPacket] Error: 1452-23000: Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+[2024-11-28 17:30:20 ERRORhttp-nio-8080-exec-7] [log4jdbc.log4j2] 1. PreparedStatement.execute() FAILED! insert into feed set writer_User_id = 0 , contents = 'ㅇㅇㅇ' , location = 'ㅠㅠㅠ'  {FAILED after 2 ms}
+java.sql.SQLIntegrityConstraintViolationException: (conn=15) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:276)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.insFeed(Unknown Source)
+	at green.greengram.Feed.FeedService.postFeed(FeedService.java:23)
+	at green.greengram.Feed.FeedController.postFeed(FeedController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. PreparedStatement.close() returned 
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. Connection.getMetaData() returned org.mariadb.jdbc.DatabaseMetaData@5793bf27
+[2024-11-28 17:30:20 INFO http-nio-8080-exec-7] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:30:20 ERRORhttp-nio-8080-exec-7] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=15) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+### The error may exist in file [D:\RYU\GreenGramVer2\build\resources\main\mappers\FeedMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into feed             set writer_User_id = ?                 , contents = ?                 , location = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=15) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+; (conn=15) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))] with root cause
+java.sql.SQLIntegrityConstraintViolationException: (conn=15) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:276)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.insFeed(Unknown Source)
+	at green.greengram.Feed.FeedService.postFeed(FeedService.java:23)
+	at green.greengram.Feed.FeedController.postFeed(FeedController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-11-28 17:31:43 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.isClosed() returned false
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection closed. {executed in 1ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.isClosed() returned false
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.isClosed() returned false
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection closed. {executed in 1ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.isClosed() returned false
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.isClosed() returned false
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.isClosed() returned false
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.isClosed() returned false
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.isClosed() returned false
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.isClosed() returned false
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.isClosed() returned false
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.close() returned 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection closed. {executed in 0ms} 
+[2024-11-28 17:31:43 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.close() returned 
+[2024-11-28 17:31:43 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-11-28 17:31:45 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 4444 (D:\RYU\GreenGramVer2\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer2)
+[2024-11-28 17:31:45 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-11-28 17:31:45 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-11-28 17:31:45 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-11-28 17:31:45 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-11-28 17:31:45 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:31:45 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-11-28 17:31:45 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-11-28 17:31:45 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-11-28 17:31:45 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 768 ms
+[2024-11-28 17:31:45 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver2
+[2024-11-28 17:31:46 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-11-28 17:31:46 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:31:46 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-11-28 17:31:46 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer2Application in 1.603 seconds (process running for 1.939)
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection opened. {executed in 47ms} 
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.new Connection returned 
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getNetworkTimeout() returned 0
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.isReadOnly() returned false
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.isValid(1) returned true
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getTransactionIsolation() returned 4
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1c5a4706
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.new PreparedStatement returned 
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.prepareStatement(insert into feed
+            set writer_user_id = ?
+                , contents = ?
+                , location = ?, 1) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@78bbe6c5
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setLong(1, 0) returned 
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setString(2, "ㅇㅇㅇ") returned 
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setString(3, "ㅠㅠㅠ") returned 
+[2024-11-28 17:31:49 WARN http-nio-8080-exec-1] [org.mariadb.jdbc.message.server.ErrorPacket] Error: 1452-23000: Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+[2024-11-28 17:31:49 ERRORhttp-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.execute() FAILED! insert into feed set writer_user_id = 0 , contents = 'ㅇㅇㅇ' , location = 'ㅠㅠㅠ'  {FAILED after 0 ms}
+java.sql.SQLIntegrityConstraintViolationException: (conn=25) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:276)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.insFeed(Unknown Source)
+	at green.greengram.Feed.FeedService.postFeed(FeedService.java:23)
+	at green.greengram.Feed.FeedController.postFeed(FeedController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.close() returned 
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getMetaData() returned org.mariadb.jdbc.DatabaseMetaData@8b41f51
+[2024-11-28 17:31:49 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:31:49 ERRORhttp-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=25) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+### The error may exist in file [D:\RYU\GreenGramVer2\build\resources\main\mappers\FeedMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into feed             set writer_user_id = ?                 , contents = ?                 , location = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=25) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+; (conn=25) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))] with root cause
+java.sql.SQLIntegrityConstraintViolationException: (conn=25) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:276)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.insFeed(Unknown Source)
+	at green.greengram.Feed.FeedService.postFeed(FeedService.java:23)
+	at green.greengram.Feed.FeedController.postFeed(FeedController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection opened. {executed in 0ms} 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.new Connection returned 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.isReadOnly() returned false
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.getAutoCommit() returned true
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection opened. {executed in 0ms} 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.new Connection returned 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.isReadOnly() returned false
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.getAutoCommit() returned true
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection opened. {executed in 1ms} 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.new Connection returned 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.isReadOnly() returned false
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.getAutoCommit() returned true
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection opened. {executed in 1ms} 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.new Connection returned 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.isReadOnly() returned false
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.getAutoCommit() returned true
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection opened. {executed in 1ms} 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.new Connection returned 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.isReadOnly() returned false
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.getAutoCommit() returned true
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection opened. {executed in 0ms} 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.new Connection returned 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.isReadOnly() returned false
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.getAutoCommit() returned true
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection opened. {executed in 0ms} 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.new Connection returned 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.isReadOnly() returned false
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.getAutoCommit() returned true
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection opened. {executed in 0ms} 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.new Connection returned 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.isReadOnly() returned false
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.getAutoCommit() returned true
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection opened. {executed in 1ms} 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.new Connection returned 
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.isReadOnly() returned false
+[2024-11-28 17:31:50 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.getAutoCommit() returned true
+[2024-11-28 17:32:36 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. Connection.isValid(5) returned true
+[2024-11-28 17:32:36 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:32:36 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. PreparedStatement.new PreparedStatement returned 
+[2024-11-28 17:32:36 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. Connection.prepareStatement(insert into feed
+            set writer_user_id = ?
+                , contents = ?
+                , location = ?, 1) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@b132ee7
+[2024-11-28 17:32:36 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. PreparedStatement.setLong(1, 0) returned 
+[2024-11-28 17:32:36 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. PreparedStatement.setString(2, "ㅇㅇㅇ") returned 
+[2024-11-28 17:32:36 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. PreparedStatement.setString(3, "ㅠㅠㅠ") returned 
+[2024-11-28 17:32:36 WARN http-nio-8080-exec-4] [org.mariadb.jdbc.message.server.ErrorPacket] Error: 1452-23000: Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+[2024-11-28 17:32:36 ERRORhttp-nio-8080-exec-4] [log4jdbc.log4j2] 1. PreparedStatement.execute() FAILED! insert into feed set writer_user_id = 0 , contents = 'ㅇㅇㅇ' , location = 'ㅠㅠㅠ'  {FAILED after 0 ms}
+java.sql.SQLIntegrityConstraintViolationException: (conn=25) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:276)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.insFeed(Unknown Source)
+	at green.greengram.Feed.FeedService.postFeed(FeedService.java:23)
+	at green.greengram.Feed.FeedController.postFeed(FeedController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-11-28 17:32:36 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. PreparedStatement.close() returned 
+[2024-11-28 17:32:36 INFO http-nio-8080-exec-4] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:32:36 ERRORhttp-nio-8080-exec-4] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=25) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+### The error may exist in file [D:\RYU\GreenGramVer2\build\resources\main\mappers\FeedMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into feed             set writer_user_id = ?                 , contents = ?                 , location = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=25) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+; (conn=25) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))] with root cause
+java.sql.SQLIntegrityConstraintViolationException: (conn=25) Cannot add or update a child row: a foreign key constraint fails (`greengram_ver2`.`feed`, CONSTRAINT `FK_FEED_writer_user_id` FOREIGN KEY (`writer_user_id`) REFERENCES `user` (`user_id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:172)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:915)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:854)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:773)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:697)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:93)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:276)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.insFeed(Unknown Source)
+	at green.greengram.Feed.FeedService.postFeed(FeedService.java:23)
+	at green.greengram.Feed.FeedController.postFeed(FeedController.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-11-28 17:33:39 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.isClosed() returned false
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.isClosed() returned false
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.isClosed() returned false
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.isClosed() returned false
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.isClosed() returned false
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.isClosed() returned false
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.isClosed() returned false
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.isClosed() returned false
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.isClosed() returned false
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.isClosed() returned false
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.close() returned 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection closed. {executed in 0ms} 
+[2024-11-28 17:33:39 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.close() returned 
+[2024-11-28 17:33:39 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-11-28 17:33:55 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 8248 (D:\RYU\GreenGramVer2\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer2)
+[2024-11-28 17:33:55 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-11-28 17:33:55 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-11-28 17:33:55 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-11-28 17:33:56 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-11-28 17:33:56 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:33:56 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-11-28 17:33:56 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-11-28 17:33:56 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-11-28 17:33:56 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 758 ms
+[2024-11-28 17:33:56 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver2
+[2024-11-28 17:33:56 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-11-28 17:33:56 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:33:56 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-11-28 17:33:56 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer2Application in 1.587 seconds (process running for 1.917)
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-11-28 17:34:44 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+[2024-11-28 17:34:44 INFO Thread-5] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection opened. {executed in 50ms} 
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.new Connection returned 
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getNetworkTimeout() returned 0
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.isReadOnly() returned false
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.isValid(1) returned true
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getTransactionIsolation() returned 4
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@5c0ee3af
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.new PreparedStatement returned 
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.prepareStatement(insert into feed
+            set writer_user_id = ?
+                , contents = ?
+                , location = ?, 1) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@2f43ee96
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setLong(1, 1) returned 
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setString(2, "ㅇㅇㅇ") returned 
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.setString(3, "ㅠㅠㅠ") returned 
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. insert into feed set writer_user_id = 1 , contents = 'ㅇㅇㅇ' , location = 'ㅠㅠㅠ'  {executed in 0 ms}
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.execute() returned false
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.getUpdateCount() returned 1
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. getGeneratedKeys on query: insert into feed set writer_user_id = 1 , contents = 'ㅇㅇㅇ' , location 
+= 'ㅠㅠㅠ'  {executed in 0 ms}
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.new ResultSet returned 
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.getGeneratedKeys() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@1811ffd9
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.getMetaData() returned org.mariadb.jdbc.client.result.ResultSetMetaData@1cef4609
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.next() returned true
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.getLong(1) returned 5
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 
+|----------|
+|insert_id |
+|----------|
+|5         |
+|----------|
+
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.next() returned false
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. ResultSet.close() returned void
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. PreparedStatement.close() returned 
+[2024-11-28 17:34:44 INFO http-nio-8080-exec-1] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:34:44 WARN http-nio-8080-exec-1] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to flush: java.nio.channels.ClosedChannelException]
+[2024-11-28 17:34:44 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-11-28 17:34:44 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.isClosed() returned false
+[2024-11-28 17:34:44 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection closed. {executed in 0ms} 
+[2024-11-28 17:34:44 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.close() returned 
+[2024-11-28 17:34:44 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection closed. {executed in 0ms} 
+[2024-11-28 17:34:44 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.close() returned 
+[2024-11-28 17:34:44 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-11-28 17:34:44 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 8248 (D:\RYU\GreenGramVer2\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer2)
+[2024-11-28 17:34:44 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-11-28 17:34:44 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-11-28 17:34:44 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:34:44 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-11-28 17:34:44 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-11-28 17:34:44 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-11-28 17:34:44 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 206 ms
+[2024-11-28 17:34:44 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver2
+[2024-11-28 17:34:44 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-11-28 17:34:44 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:34:44 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-11-28 17:34:44 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer2Application in 0.361 seconds (process running for 50.003)
+[2024-11-28 17:34:44 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Starting...
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. Connection opened. {executed in 0ms} 
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. Connection.new Connection returned 
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. Connection.getNetworkTimeout() returned 0
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. Connection.isReadOnly() returned false
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. Connection.getAutoCommit() returned true
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. Connection.isValid(1) returned true
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. Connection.getTransactionIsolation() returned 4
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [com.zaxxer.hikari.pool.HikariPool] HikariPool-2 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@47edd7ec
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Start completed.
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. Connection.getAutoCommit() returned true
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. PreparedStatement.new PreparedStatement returned 
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. Connection.prepareStatement(insert into feed
+            set writer_user_id = ?
+                , contents = ?
+                , location = ?, 1) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@33ecb300
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. PreparedStatement.setLong(1, 1) returned 
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. PreparedStatement.setString(2, "ㅇㅇㅇ") returned 
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. PreparedStatement.setString(3, "ㅠㅠㅠ") returned 
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. insert into feed set writer_user_id = 1 , contents = 'ㅇㅇㅇ' , location = 'ㅠㅠㅠ'  {executed in 16 ms}
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. PreparedStatement.execute() returned false
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. PreparedStatement.getUpdateCount() returned 1
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. getGeneratedKeys on query: insert into feed set writer_user_id = 1 , contents = 'ㅇㅇㅇ' , location 
+= 'ㅠㅠㅠ'  {executed in 0 ms}
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. ResultSet.new ResultSet returned 
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. PreparedStatement.getGeneratedKeys() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@63f96251
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. ResultSet.getMetaData() returned org.mariadb.jdbc.client.result.ResultSetMetaData@3d7a0537
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. ResultSet.next() returned true
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. ResultSet.getLong(1) returned 6
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 
+|----------|
+|insert_id |
+|----------|
+|6         |
+|----------|
+
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. ResultSet.next() returned false
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. ResultSet.close() returned void
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. PreparedStatement.close() returned 
+[2024-11-28 17:35:01 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 2. Connection.clearWarnings() returned 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 3. Connection opened. {executed in 1ms} 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 3. Connection.new Connection returned 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 3. Connection.isReadOnly() returned false
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 3. Connection.getAutoCommit() returned true
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 4. Connection opened. {executed in 2ms} 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 4. Connection.new Connection returned 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 4. Connection.isReadOnly() returned false
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 4. Connection.getAutoCommit() returned true
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 5. Connection opened. {executed in 1ms} 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 5. Connection.new Connection returned 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 5. Connection.isReadOnly() returned false
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 5. Connection.getAutoCommit() returned true
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 6. Connection opened. {executed in 0ms} 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 6. Connection.new Connection returned 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 6. Connection.isReadOnly() returned false
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 6. Connection.getAutoCommit() returned true
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 7. Connection opened. {executed in 0ms} 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 7. Connection.new Connection returned 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 7. Connection.isReadOnly() returned false
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 7. Connection.getAutoCommit() returned true
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 8. Connection opened. {executed in 0ms} 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 8. Connection.new Connection returned 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 8. Connection.isReadOnly() returned false
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 8. Connection.getAutoCommit() returned true
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 9. Connection opened. {executed in 3ms} 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 9. Connection.new Connection returned 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 9. Connection.isReadOnly() returned false
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 9. Connection.getAutoCommit() returned true
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 10. Connection opened. {executed in 0ms} 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 10. Connection.new Connection returned 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 10. Connection.isReadOnly() returned false
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 10. Connection.getAutoCommit() returned true
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 11. Connection opened. {executed in 0ms} 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 11. Connection.new Connection returned 
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 11. Connection.isReadOnly() returned false
+[2024-11-28 17:35:02 INFO HikariPool-2 connection adder] [log4jdbc.log4j2] 11. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:10 INFO SpringApplicationShutdownHook] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:36:10 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Shutdown initiated...
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 2. Connection.isClosed() returned false
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 2. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 2. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 2. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 2. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 3. Connection.isClosed() returned false
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 3. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 3. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 3. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 3. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 4. Connection.isClosed() returned false
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 4. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 4. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 4. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 4. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 5. Connection.isClosed() returned false
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 5. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 5. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 5. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 5. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 6. Connection.isClosed() returned false
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 6. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 6. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 6. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 6. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 7. Connection.isClosed() returned false
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 7. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 7. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 7. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 7. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 8. Connection.isClosed() returned false
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 8. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 8. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 8. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 8. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 9. Connection.isClosed() returned false
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 9. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 9. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 9. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 9. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 10. Connection.isClosed() returned false
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 10. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 10. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 10. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 10. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 11. Connection.isClosed() returned false
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 11. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 11. Connection.close() returned 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 11. Connection closed. {executed in 0ms} 
+[2024-11-28 17:36:10 INFO HikariPool-2 connection closer] [log4jdbc.log4j2] 11. Connection.close() returned 
+[2024-11-28 17:36:10 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-2 - Shutdown completed.
+[2024-11-28 17:36:12 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 12496 (D:\RYU\GreenGramVer2\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer2)
+[2024-11-28 17:36:12 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-11-28 17:36:12 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-11-28 17:36:12 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-11-28 17:36:13 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-11-28 17:36:13 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:36:13 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-11-28 17:36:13 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-11-28 17:36:13 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-11-28 17:36:13 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 763 ms
+[2024-11-28 17:36:13 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver2
+[2024-11-28 17:36:14 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-11-28 17:36:14 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:36:14 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-11-28 17:36:14 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer2Application in 1.635 seconds (process running for 1.964)
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. Connection opened. {executed in 39ms} 
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. Connection.new Connection returned 
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. Connection.getNetworkTimeout() returned 0
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. Connection.isReadOnly() returned false
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. Connection.isValid(1) returned true
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. Connection.getTransactionIsolation() returned 4
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@d9216a1
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. PreparedStatement.new PreparedStatement returned 
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. Connection.prepareStatement(insert into feed
+            set writer_user_id = ?
+                , contents = ?
+                , location = ?, 1) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@7dfe4166
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. PreparedStatement.setLong(1, 1) returned 
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. PreparedStatement.setString(2, "ㅇㅇㅇ") returned 
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. PreparedStatement.setString(3, "ㅠㅠㅠ") returned 
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. insert into feed set writer_user_id = 1 , contents = 'ㅇㅇㅇ' , location = 'ㅠㅠㅠ'  {executed in 2 ms}
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. PreparedStatement.execute() returned false
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. PreparedStatement.getUpdateCount() returned 1
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. getGeneratedKeys on query: insert into feed set writer_user_id = 1 , contents = 'ㅇㅇㅇ' , location 
+= 'ㅠㅠㅠ'  {executed in 1 ms}
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. ResultSet.new ResultSet returned 
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. PreparedStatement.getGeneratedKeys() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@288830ae
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. ResultSet.getMetaData() returned org.mariadb.jdbc.client.result.ResultSetMetaData@1c9b53f9
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. ResultSet.next() returned true
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. ResultSet.getLong(1) returned 7
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 
+|----------|
+|insert_id |
+|----------|
+|7         |
+|----------|
+
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. ResultSet.next() returned false
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. ResultSet.close() returned void
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. PreparedStatement.close() returned 
+[2024-11-28 17:36:20 INFO http-nio-8080-exec-2] [log4jdbc.log4j2] 1. Connection.clearWarnings() returned 
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection opened. {executed in 2ms} 
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.new Connection returned 
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.isReadOnly() returned false
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 2. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection opened. {executed in 1ms} 
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.new Connection returned 
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.isReadOnly() returned false
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 3. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection opened. {executed in 2ms} 
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.new Connection returned 
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.isReadOnly() returned false
+[2024-11-28 17:36:20 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 4. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection opened. {executed in 5ms} 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.new Connection returned 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.isReadOnly() returned false
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 5. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection opened. {executed in 5ms} 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.new Connection returned 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.isReadOnly() returned false
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 6. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection opened. {executed in 1ms} 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.new Connection returned 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.isReadOnly() returned false
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 7. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection opened. {executed in 1ms} 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.new Connection returned 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.isReadOnly() returned false
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 8. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection opened. {executed in 1ms} 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.new Connection returned 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.isReadOnly() returned false
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 9. Connection.getAutoCommit() returned true
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection opened. {executed in 4ms} 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.new Connection returned 
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.isReadOnly() returned false
+[2024-11-28 17:36:21 INFO HikariPool-1 connection adder] [log4jdbc.log4j2] 10. Connection.getAutoCommit() returned true
+[2024-11-28 17:43:19 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+[2024-11-28 17:43:19 INFO Thread-5] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:43:19 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.isClosed() returned false
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 1. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.isClosed() returned false
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 2. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.isClosed() returned false
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 3. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.isClosed() returned false
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 4. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.isClosed() returned false
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 5. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.isClosed() returned false
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 6. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.isClosed() returned false
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 7. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.isClosed() returned false
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 8. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.isClosed() returned false
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 9. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.isClosed() returned false
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.close() returned 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection closed. {executed in 0ms} 
+[2024-11-28 17:43:19 INFO HikariPool-1 connection closer] [log4jdbc.log4j2] 10. Connection.close() returned 
+[2024-11-28 17:43:19 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-11-28 17:43:19 INFO restartedMain] [green.greengram.GreenGramVer3Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 12496 (D:\RYU\GreenGramVer2\build\classes\java\main started by Administrator in D:\RYU\GreenGramVer2)
+[2024-11-28 17:43:19 INFO restartedMain] [green.greengram.GreenGramVer3Application] No active profile set, falling back to 1 default profile: "default"
+[2024-11-28 17:43:19 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-11-28 17:43:19 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:43:19 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-11-28 17:43:19 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-11-28 17:43:19 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-11-28 17:43:19 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 182 ms
+[2024-11-28 17:43:19 INFO restartedMain] [green.greengram.common.MyFileUtils] MyFileUtils: uploadPath = D:/2024-02/download/greengram_ver2
+[2024-11-28 17:43:19 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-11-28 17:43:19 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 17:43:19 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-11-28 17:43:19 INFO restartedMain] [green.greengram.GreenGramVer3Application] Started GreenGramVer2Application in 0.324 seconds (process running for 427.818)
+[2024-11-28 17:43:19 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[2024-11-28 17:43:24 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-11-28 17:43:24 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-11-28 17:43:24 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms

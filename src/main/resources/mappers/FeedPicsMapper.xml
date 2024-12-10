@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 2.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="green.greengram.Feed.FeedPicsMapper">
+    <insert id="insFeedPic">
+        insert into feed_pic
+        ( feed_id, pic)
+        values
+        <foreach collection="pics" item="pic" open="(" close=")" separator="),(">
+            #{feedId}, #{pic}
+        </foreach>
+    </insert>
+
+    <insert id="insFeedPic2">
+        insert into feed_pic
+        ( feed_id, pic )
+        values
+        <foreach collection="pics" item="pic" separator=",">
+            ( #{feedId}, #{pic} )
+        </foreach>
+    </insert>
+
+    <select id="selFeedPicList">
+        select pic
+            from feed_pic
+        where feed_id = #{feedId}
+    </select>
+
+</mapper>
